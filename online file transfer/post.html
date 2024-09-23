@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>File Snap</title>
+	<link rel="stylesheet" type="text/css" href="static/nav.css">
+	<link rel="stylesheet" type="text/css" href="static/post.css">
+	<link rel="shortcut icon" href="static/folder.png">
+</head>
+<body>
+
+<nav id="nv"><label id="toggle">=</label> File Share</nav>
+
+<div id="tgl">
+	<ul>
+		<a class="li" href="/"><li>Home</li></a>
+		<a class="li" href="/about"><li>Send</li></a>
+		<a class="li" href="/privacy"><li>Recieve</li></a>
+	</ul>
+</div>
+
+
+<div id="content">
+	<img>
+	<p>OR</p>
+	<p>File ID: {{file_id}}</p>
+	<p>OR</p>
+	<p>Download link - <a href="/data/{{file_id}}">link</a></p>
+</div>
+
+<script type="text/javascript">
+	setTimeout(function() {document.getElementsByTagName("img")[0].src="http://127.0.0.1:5000/files/{{file_id}}/qrcode.png";}, 2000);
+</script>
+<footer>
+	Made by <a href="https://github.com/abhineetraj1">rushikesh kuwar</a>
+</footer>
+<script type="text/javascript" src="static/script.js"></script>
+</body>
+</html>

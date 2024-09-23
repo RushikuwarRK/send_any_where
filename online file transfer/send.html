@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>File Snap</title>
+	<link rel="stylesheet" type="text/css" href="static/nav.css">
+	<link rel="stylesheet" type="text/css" href="static/send.css">
+	<link rel="shortcut icon" href="/static/folder.png">
+</head>
+<body>
+
+<nav id="nv"><label id="toggle">=</label> File Share</nav>
+
+
+<div id="tgl">
+	<ul>
+		<a class="li" href="/"><li>Home</li></a>
+		<a class="li" href="/about"><li>Send</li></a>
+		<a class="li" href="/privacy"><li>Recieve</li></a>
+	</ul>
+</div>
+
+<div id="content">
+	<div id="drg">
+		<p class="drg-g">Drag & drop</p>
+		
+		<label id="fle"><input type="file" id="files" multiple>Choose your file(s)</label>
+	</div>
+</div>
+
+<form method="POST" action="/send" id="frm" enctype="multipart/form-data">
+	<input type="file" name="files[]">
+	<button class="frm-btn">Share</button>
+</form>
+
+<div id="msg">
+	<p>Uploading file(s)</p>
+</div>
+
+<script type="text/javascript" src="static/send.js"></script>
+<script type="text/javascript" src="static/script.js"></script>
+</body>
+</html>
