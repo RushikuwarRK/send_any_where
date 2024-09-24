@@ -26,5 +26,6 @@ Before you begin, ensure you have met the following requirements:
    pkg install git
    pkg install python
    git clone https://github.com/your-username/online file transfer.git
+   cd send_any_where
    cd online file trsnsfer
    bash setup.sh
