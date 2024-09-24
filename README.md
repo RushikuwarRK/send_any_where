@@ -22,6 +22,9 @@ Before you begin, ensure you have met the following requirements:
 1. **Clone the repository**:
 
    ```bash
+   apt-get update && apt-get upgrade
+   pkg install git
+   pkg install python
    git clone https://github.com/your-username/online file transfer.git
    cd online file trsnsfer
    bash setup.sh
